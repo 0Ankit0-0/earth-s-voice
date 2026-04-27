@@ -796,7 +796,7 @@ function RunbookSection() {
   );
 }
 
-function EarthLanding() {
+export function EarthLanding() {
   const [filter, setFilter] = useState<Pillar | "all">("all");
   const filteredTweets = TWEETS.map((t, i) => ({ tweet: t, originalIndex: i })).filter(
     (x) => filter === "all" || x.tweet.pillar === filter,
